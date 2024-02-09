@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <style>
+  body{
+    background-image: url('{% static "images/bg2.jpg" %}');
+    background-size: cover;
+    background-repeat: no-repeat;
+            
+  }
+
+
+ nav {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  .logo{
+    background-color: rgb(144, 109, 116);
+    color: beige;
+  }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <h1>STUDENT ATTENDANCE SYSTEM</h1>
+    </div>
+    
+    <ul>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li><a href="index">Attendance</a></li>
+    </ul>
+  </nav>
+  
+  
+</body>
+</html>
